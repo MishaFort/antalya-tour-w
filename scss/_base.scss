@@ -11,10 +11,20 @@ body {
   background-position: center bottom;
   background-size: cover;
   font-family: 'Sarala', sans-serif;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.65;
   margin: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/background-main@2x.jpg');
+  }
 }
 
 h1,

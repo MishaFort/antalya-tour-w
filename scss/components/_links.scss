@@ -2,19 +2,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 78px;
-  margin-bottom: 20px;
+  width: 221px;
+  height: 42px;
+  margin-bottom: 16px;
   color: var(--color-primary-dark);
-  background: linear-gradient(90deg, #23cda8 0%, #ef7f1a 100%);
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   border-radius: 90px;
   text-decoration: none;
+  transition: transform 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 400px;
+    height: 78px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 
   &:hover {
-    background: linear-gradient(90deg, #ea821e 0%, #050741 100%);
+    transform: scale(1.02);
+  }
+
+  &--telegram {
+    background: linear-gradient(90deg, #8cc8d1 0%, #d3bea3 100%);
+
+    &:hover {
+      background: linear-gradient(90deg, #23cda8 0%, #ef7f1a 100%);
+    }
+  }
+
+  &--instagram {
+    background: linear-gradient(90deg, #d8b9a0 0%, #a1a1ba 100%);
+
+    &:hover {
+      background: linear-gradient(90deg, #ea821e 0%, #050741 100%);
+    }
+  }
+
+  &--facebook {
+    background: linear-gradient(90deg, #94a0bd 0%, #83c0b0 100%);
+
+    &:hover {
+      background: linear-gradient(90deg, #0e0d40 0%, #169e5c 100%);
+    }
+  }
+
+  &--tiktok {
+    background: linear-gradient(90deg, #81c7b3 0%, #8dcce3 100%);
+
+    &:hover {
+      background: linear-gradient(90deg, #16995c 0%, #29c2cc 100%);
+    }
   }
 }
