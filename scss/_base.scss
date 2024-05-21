@@ -6,7 +6,7 @@
 
 body {
   color: var(--color-brand);
-  background-image: url('../images/background-main.jpg');
+  background-image: url('../images/background-main-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -16,14 +16,21 @@ body {
   line-height: 1.65;
   margin: 0;
 
-  @media screen and (min-width: $bp-tablet) {
-    font-size: 20px;
-  }
-
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/background-main@2x.jpg');
+    background-image: url('../images/background-main-mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url('../images/background-main.jpg');
+    font-size: 20px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/background-main@2x.jpg');
+    }
   }
 }
 
