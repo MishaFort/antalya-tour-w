@@ -7,7 +7,7 @@
 body {
   height: calc(var(--vh, 1vh) * 100);
   color: var(--color-brand);
-  background-color: rgba(141, 204, 227, 1);
+  background-color: var(--color-primary-light);
   background-image: url('../images/background-main-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -24,11 +24,8 @@ body {
     background-image: url('../images/background-main-mobile@2x.jpg');
   }
 
-  @media screen and (min-width: $bp-mobile) {
-    height: 100%;
-  }
-
   @media screen and (min-width: $bp-tablet) {
+    height: 100%;
     background-image: url('../images/background-main.jpg');
     font-size: 20px;
 
@@ -40,6 +37,7 @@ body {
   }
 
   @media screen and (min-width: $bp-max) {
+    background-color: rgba(141, 204, 227, 1);
     background-size: 1440px;
   }
 }
