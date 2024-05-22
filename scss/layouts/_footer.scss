@@ -1,23 +1,24 @@
 .footer {
-  padding-top: calc(100vh - 570px);
-  padding-bottom: 5px;
-
-  @media screen and (min-width: $bp-tablet) {
-    padding-top: 140px;
-  }
-
-  @media screen and (min-width: $bp-desktop) {
-    padding-top: 38px;
-  }
-
   &__container {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: static;
+      padding-top: 140px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 38px;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
     color: var(--color-primary-light);
     font-family: 'Ephesis', sans-serif;
