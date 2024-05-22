@@ -6,6 +6,7 @@
 
 body {
   color: var(--color-brand);
+  background-color: rgba(141, 204, 227, 1);
   background-image: url('../images/background-main-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -31,6 +32,12 @@ body {
       (min-resolution: 2dppx) {
       background-image: url('../images/background-main@2x.jpg');
     }
+  }
+
+  @media screen and (min-width: $bp-max) {
+    background-size: 1440px;
+    /*  max-width: 1440px;
+    margin: 0 auto; */
   }
 }
 
