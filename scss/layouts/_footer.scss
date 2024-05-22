@@ -10,8 +10,12 @@
       padding-top: 4px;
     }
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: 600px) {
       position: static;
+      padding-top: 40px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
       padding-top: 140px;
     }
 
