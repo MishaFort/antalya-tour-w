@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   color: var(--color-brand);
   background-color: rgba(141, 204, 227, 1);
   background-image: url('../images/background-main-mobile.jpg');
