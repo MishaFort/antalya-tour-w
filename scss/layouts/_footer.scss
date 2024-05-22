@@ -5,6 +5,11 @@
     width: 100%;
     margin-bottom: 5px;
 
+    @media screen and (max-height: $bp-mobile) {
+      position: static;
+      padding-top: 4px;
+    }
+
     @media screen and (min-width: $bp-tablet) {
       position: static;
       padding-top: 140px;
